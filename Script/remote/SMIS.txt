@@ -1,0 +1,23 @@
+[event00]
+cmd = cp smissi smissi_141215
+cmd = rm  -r SMI-S_Provider
+cmd = scp zhaorw@172.28.11.75:~/louting/smis/SMIS-Provider ./
+cmd = rm -r cppTest
+cmd = rm -r UnitTest
+cmd = rm -r test
+cmd = rm Problems.txt
+cmd = rm -r SI_related
+answer = None
+clean_cmd = None
+[event01]
+cmd = ls -l
+answer = None
+clean_cmd = None
+cmd = pwd
+[enent02]
+answer = None
+clean_cmd = None
+[event03]
+cmd = date
+answer = None
+clean_cmd = None

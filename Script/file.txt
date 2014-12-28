@@ -1,0 +1,18 @@
+[event00]
+cmd = hostname, ls
+cmd = ls -l /opt/openstak
+cmd = ls, ls -l, ls, ls -l ,ls -l
+answer = None
+clean_cmd = None
+[event01]
+cmd = ls -l
+answer = None
+clean_cmd = None
+cmd = pwd
+[enent02]
+answer = None
+clean_cmd = None
+[event03]
+cmd = date
+answer = None
+clean_cmd = None

@@ -1,0 +1,7 @@
+[event00]
+cmd = tar -cvf update.tar opt/ usr/ etc/ var_flash/
+cmd = cp update.tar  RTR014y/.
+cmd = tar -cvf RTR014y.tar RTR014y
+cmd = bzip2 RTR014y.tar
+answer = None
+clean_cmd = None

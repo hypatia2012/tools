@@ -1,0 +1,23 @@
+#
+[event00]
+cmd = cd ~/dataconnect/
+cmd = tar xvf rtrcond.tar
+cmd = cd rtrcond
+cmd = /usr/lib/pkg.depotd -d /root/necrtr_repo -p 11001 >/dev/null 2>&1  &
+cmd = eval `pkgsend -s http://localhost:11001 open rtrcond@1.3.1.0-0.111`
+cmd = pkgsend -s http://localhost:11001 include manifest
+cmd = pkgsend -s http://localhost:11001 close > tmp_dataconnect_HY.txt
+cmd = cat tmp_dataconnect_HY.txt
+#answer = pkg:/rtrcond@
+answer = None
+clean_cmd = None
+[event01]
+cmd = pkg set-publisher -P -O http://localhost:11001 rtrcond
+answer = PUBLISHER
+clean_cmd = None
+cmd = pwd
+[enent02]
+cmd = pkg refresh rtrcond
+cmd = cat tmp_dataconnect_HY.txt | tail -1 | pkg install
+answer = None
+clean_cmd = None

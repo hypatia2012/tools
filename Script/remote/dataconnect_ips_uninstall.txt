@@ -1,0 +1,6 @@
+[event00]
+cmd = cd ~/dataconnect/
+cmd = cat tmp_dataconnect_HY.txt | tail -1 | pkg uninstall
+cmd = rm tmp_dataconnect_HY.txt
+answer = None
+clean_cmd = None

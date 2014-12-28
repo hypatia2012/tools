@@ -1,0 +1,5 @@
+[event00]
+cmd = hostname
+cmd =ls -l /opt/openstack
+answer = None
+clean_cmd = None
